@@ -32,11 +32,7 @@ public  class CustomerController {
 	public Customer updateCustomerDetailsById (@PathVariable Long id, @RequestBody Customer cust) {
 		return CustomerService.updateCustomerDetails(id,cust);
 	}
-	@DeleteMapping("customer/{id}")
-	public String DeleteCustomerbyId (@PathVariable Long id) {
-		return CustomerService.deleteCustomerById(id);
-	}
-	
+
 	
 	
 	
