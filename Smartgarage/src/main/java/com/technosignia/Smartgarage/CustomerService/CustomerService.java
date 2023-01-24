@@ -43,7 +43,7 @@ public  class CustomerService {
 	public static String  deleteCustomerById(Long id) {
 		Customer customer =(customerRepository.findById(id).get());
 		customerRepository.delete(customer);
-		return "record deleted Successfully";	
+		return "record deleted Successfully completed";	
 		}
 
 }
